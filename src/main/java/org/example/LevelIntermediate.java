@@ -1,9 +1,14 @@
 package org.example;
 
+import java.util.Arrays;
+import java.util.Scanner;
+
 public class LevelIntermediate {
 
     public static void main(String[] args) {
         System.out.println(returnNumbersUpTo100());
+        System.out.println(Arrays.toString(returnInputAsArray()));
+
     }
 
     public static String numberReturnString(int number) {
@@ -25,4 +30,20 @@ public class LevelIntermediate {
         }
         return output;
     }
+
+    public static String[] returnInputAsArray() {
+
+        Scanner scan = new Scanner(System.in);
+
+        int numberOfTries = 4;
+        String[] newArray = new String[numberOfTries];
+        for(int i = 0; i < numberOfTries; i++) {
+            System.out.println("Give input: ");
+            String userInput = scan.nextLine();
+            newArray[i] = userInput;
+            System.out.println(userInput);
+        }
+        return newArray;
+    }
+
 }

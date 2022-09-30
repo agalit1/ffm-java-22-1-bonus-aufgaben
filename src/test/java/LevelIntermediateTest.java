@@ -26,4 +26,15 @@ class LevelIntermediateTest {
         assertTrue(actual.contains("#"));
     }
 
+    @Test
+    public void StringContainsDollar() {
+        //given
+
+        //when
+        String actual = LevelIntermediate.returnNumbersUpTo100();
+        //then
+        assertTrue(actual.contains("$"));
+    }
+
+
 }
