@@ -29,4 +29,24 @@ class LevelExpertTest {
         assertArrayEquals(expected, actual);
     }
 
+    @Test
+    public void returnStringABCAsArray(){
+        //given
+        String input = "a,bc,def";
+        //when
+        String[] actual = LevelExpert.convertStringToArray(input);
+        //then
+        String[] expected = new String[]{"a", "bc", "def"};
+        assertArrayEquals(expected,actual);
+    }
+    @Test
+    public void checksumOf312Is6() {
+        //given
+        int number = 312;
+        //when
+        int actual = LevelExpert.checksum(number);
+        //then
+        assertEquals(6,actual);
+    }
+
 }

@@ -8,7 +8,8 @@ public class LevelExpert {
         int[] numbers = new int[]{6, 2, 8, 3, 9, 6};
 
         System.out.println(Arrays.toString(sortArrayAscending(numbers)));
-
+        System.out.println(Arrays.toString(convertStringToArray("as,dasdtr,test,hu")));
+        System.out.println(checksum(312));
     }
 
     public static String reverseString(String input) {
@@ -26,5 +27,18 @@ public class LevelExpert {
         return numbers;
 
 
+    }
+
+    public static String[] convertStringToArray(String input) {
+        return input.split(",");
+    }
+
+    public static int checksum(int number) {
+        String numStr = String.valueOf(number);
+        int sum = 0;
+        for (int i = 0; i < (numStr.length()); i++) {
+            sum += Integer.parseInt(numStr.substring(i,i+1));
+        }
+        return sum;
     }
 }
