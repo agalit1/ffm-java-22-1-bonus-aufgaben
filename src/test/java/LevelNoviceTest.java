@@ -23,6 +23,21 @@ class LevelNoviceTest {
     }
 
     @Test
+    public void anaGreetingsOutput() {
+        //given
+        String name = "ana";
+        ByteArrayInputStream consoleIn = new ByteArrayInputStream(name.getBytes());
+        System.setIn(consoleIn);
+
+        //when
+        String actual = LevelNovice.greetUser();
+
+        //then
+        String expected = "Hello ana!";
+        assertEquals(expected,actual);
+    }
+
+    @Test
     public void numberGreaterThan0() {
         //given
         int number = 5;

@@ -6,7 +6,9 @@ public class LevelNovice {
     public static void main(String[] args) {
         System.out.println();
 
-        System.out.println(printName5Times());
+        //System.out.println(printName5Times());
+
+        System.out.println(greetUser());
     }
 
     public static String printName5Times() {
@@ -27,5 +29,13 @@ public class LevelNovice {
 
     public static int squareOfNumber(int number) {
         return number * number;
+    }
+
+    public static String greetUser() {
+        Scanner scan = new Scanner(System.in);
+
+        System.out.println("Enter your name: ");
+        String name = scan.nextLine();
+        return "Hello " + name + "!";
     }
 }
