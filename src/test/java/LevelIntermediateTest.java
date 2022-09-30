@@ -15,7 +15,15 @@ class LevelIntermediateTest {
 
         //then
         assertEquals("Fuenf", actual);
+    }
+    @Test
+    public void StringContainsHash() {
+        //given
 
+        //when
+        String actual = LevelIntermediate.returnNumbersUpTo100();
+        //then
+        assertTrue(actual.contains("#"));
     }
 
 }
