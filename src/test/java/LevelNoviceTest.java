@@ -22,5 +22,29 @@ class LevelNoviceTest {
         assertEquals(expected,actual);
     }
 
+    @Test
+    public void numberGreaterThan0() {
+        //given
+        int number = 5;
+
+        //when
+        boolean actual = LevelNovice.checkNumberGreaterThan0(number);
+
+        //then
+        assertTrue(actual);
+    }
+
+    @Test
+    public void squareOf4Equals16() {
+        //given
+        int number = 4;
+
+        //when
+        int actual = LevelNovice.squareOfNumber(number);
+
+        //then
+        assertEquals(16,actual);
+    }
+
 
 }

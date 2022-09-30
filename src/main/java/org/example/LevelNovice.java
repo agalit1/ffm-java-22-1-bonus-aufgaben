@@ -20,4 +20,12 @@ public class LevelNovice {
         }
         return output;
     }
+
+    public static boolean checkNumberGreaterThan0(int number) {
+        return number > 0;
+    }
+
+    public static int squareOfNumber(int number) {
+        return number * number;
+    }
 }
