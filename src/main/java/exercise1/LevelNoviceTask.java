@@ -1,9 +1,12 @@
-package LevelNoviceTask;
+package exercise1;
 
-public class LevelNovice {
+import java.util.Scanner;
+
+public class LevelNoviceTask {
+
     public static void main(String[] args) {
 
-//        Scanner scan = new Scanner(System.in);
+          Scanner scan = new Scanner(System.in);
 //
 //        System.out.println("Enter your name: ");
 //        String name = scan.nextLine();
@@ -11,6 +14,7 @@ public class LevelNovice {
 //            System.out.println(name);
 //        }
 
-
     }
+
+
 }
